@@ -16,8 +16,9 @@ font-family: 'Dancing Script', cursive;
 @import url('/app/css/module/header.css');
 @import url('/app/css/module/allSearch.css');
 @import url('/app/css/module/cards.css');
-@import url('/app/css/module/timer.css');
 @import url('/app/css/module/moduleCards.css');
+@import url('/app/css/module/timer.css');
+@import url('/app/css/module/footer.css');
 
 
 *{
