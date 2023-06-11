@@ -1,27 +1,41 @@
-/*Шрифты для сайта*/
+                    /*!Шрифты для сайта*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*   Применение готики
+font-family: 'Grenze Gotisch', cursive;
+*/
+/* Применение dance sqript
+font-family: 'Dancing Script', cursive;
+*/
+  
+                    /* !Модули стилей блоков*/
+
 @import url('/app/css/module/navbar.css');
 @import url('/app/css/module/header.css');
 @import url('/app/css/module/allSearch.css');
 @import url('/app/css/module/cards.css');
+@import url('/app/css/module/timer.css');
 @import url('/app/css/module/moduleCards.css');
-/*  ! Применение готики
-font-family: 'Grenze Gotisch', cursive;
-*/
-/* !Применение dance sqript
-font-family: 'Dancing Script', cursive;
-*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+                    /* ! Шаблоны цветов */
+
 :root{
     --bg_color: rgb(51, 34, 34);
     --text_color: rgb(134, 130, 130);
     --search_color:rgba(69, 69, 69, 0.464);
 }
+
+
+                    /*! Конвертация px в rem. Во время работы считать 1rem = 10 px  */
 html{
     font-size: 62.5%;  /* это превратит значение 16px*0.625=10px */
 }
@@ -38,7 +52,13 @@ body{
 /*! для облегчения работы скрытие элементов*/
 /* .nav{
     display: none;
-} */
-/* .main{
+}
+ .main{
+    display: none;
+}
+section{
+    display: none;
+}
+header{
     display: none;
 } */

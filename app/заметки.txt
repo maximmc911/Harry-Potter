@@ -5,25 +5,3 @@ https://hp-api.onrender.com/
 
 
 
-
-
-
-
-
-"patronus": "stag",
-"hogwartsStudent": true,
-"hogwartsStaff": false,
-
-
-
-
-
-
-
-
-
-«патронус»: «олень»,
-«Студент Хогвартса»: правда,
-«посох Хогвартса»: ложь,
-
-

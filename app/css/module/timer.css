@@ -1,0 +1,43 @@
+
+.time__cointeiner{
+    display: flex;
+    justify-content: center;
+}
+.timer{
+    width: 80rem;
+    height: 30rem;
+    background-image: url(/app/image/timerBg.png);
+    border-radius: 3rem;
+}
+.time__items{
+    color: var(--bg_color);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+.timer_year h3 , .timer__month h3,  .timer__day h3 , 
+.timer__hour h3 , .timer__min h3 ,  .timer__sec h3 {
+    color: var(--bg_color);
+    font-family: 'Grenze Gotisch', cursive;
+    text-align: center;
+    font-size: 7rem;
+    border: none;
+    background-image: url("/app/image/timerBgCheck.png");
+    width: 10rem;
+    border-radius: 3rem;
+}
+.timer_year h2 , .timer__month h2 ,  .timer__day h2 , 
+.timer__hour h2 , .timer__min h2 ,  .timer__sec h2{
+    color: var(--bg_color);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 4rem;
+    text-align: center;
+    
+}
+.timer__check{
+    display: flex;
+    justify-content: space-between;
+}
+.jjj{
+    padding-top: 50rem;
+}
