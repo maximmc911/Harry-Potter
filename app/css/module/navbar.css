@@ -1,0 +1,44 @@
+/* ! Navbar Start*/
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.nav__conteiner{
+    max-width: 160rem;
+    width: 100%;
+    position:fixed;
+    opacity: 0.8;
+    z-index: 1;
+}
+.nav__content{
+    background: rgb(34, 33, 33);
+    height: 14rem;
+   
+}
+.nav__image{
+    padding-top: 1rem;
+    display: flex;
+    justify-content:space-around;
+}
+.nav__image img{
+        width: 10rem;
+        height: 7rem;
+    }
+.items a{
+    color: var(--text_color);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+   
+}
+.list__items{
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+/* ! Navbar End*/ 

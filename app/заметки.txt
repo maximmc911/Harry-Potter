@@ -1,1 +1,29 @@
 https://www.rbc.ru/life/news/6478500b9a7947284d013d32
+https://hp-api.onrender.com/
+
+
+
+
+
+
+
+
+
+
+"patronus": "stag",
+"hogwartsStudent": true,
+"hogwartsStaff": false,
+
+
+
+
+
+
+
+
+
+«патронус»: «олень»,
+«Студент Хогвартса»: правда,
+«посох Хогвартса»: ложь,
+
+

@@ -1,0 +1,29 @@
+/* !main search Start*/
+.main__conteiner{
+    background-image: url(/app/image/Gothicwallz--Gothic-wallpaper-207.png);
+    height: 590rem;
+    background-repeat:round;
+  
+}
+.main_search{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.search__form input , .Gryffindor__search__form input ,
+.Slytherin_search__form input , .Hufflepuff__search__form input ,
+.Ravenclaw_search__form input , .Other_search__form input{
+    margin: 10rem;
+    width: 70rem;
+    height: 7rem;
+    background-color: var(--search_color) ;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 3rem;
+    color: var(--text_color);
+}
+
+/* !main search End*/

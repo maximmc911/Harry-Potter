@@ -1,0 +1,26 @@
+/* ! Header Start*/ 
+.header__items {
+    padding: 30rem;
+    background-image: url(/app/image/bg-header-image.png);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.header__title {
+    color: var(--text_color);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    -webkit-animation: pulsate 1.5s linear infinite;
+    animation: pulsate 3.2s linear infinite;
+}
+
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+   }
+
+
+/* ! Header End*/ 

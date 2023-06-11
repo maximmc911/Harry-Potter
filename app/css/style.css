@@ -1,7 +1,11 @@
 /*Шрифты для сайта*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('/app/css/module/navbar.css');
+@import url('/app/css/module/header.css');
+@import url('/app/css/module/allSearch.css');
+@import url('/app/css/module/cards.css');
+@import url('/app/css/module/moduleCards.css');
 /*  ! Применение готики
 font-family: 'Grenze Gotisch', cursive;
 */
@@ -26,172 +30,10 @@ body{
     font-size: 1.6rem; /*вернет значение к 16px для браузеров */
     background-color: var(--bg_color) ;
 }
-/* ! Navbar Start*/
-li{
-    list-style: none;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-    list-style: none;
-}
-.nav__conteiner{
-    max-width: 160rem;
-    width: 100%;
-    position:fixed;
-    opacity: 0.8;
-    z-index: 10;
-}
-.nav__content{
-    background: rgb(34, 33, 33);
-    height: 14rem;
-   
-}
-.nav__image{
-    padding-top: 1rem;
-    display: flex;
-    justify-content:space-around;
-}
-.nav__image img{
-        width: 10rem;
-        height: 7rem;
-    }
-.items a{
-    color: var(--text_color);
-    font-family: 'Grenze Gotisch', cursive;
-    font-size: 3rem;
-    font-weight: 500;
-   
-}
-.list__items{
-    padding: 0.5rem;
-
-    display: flex;
-    justify-content: space-around;
-}
-/* ! Navbar End*/ 
-/* ! Header Start*/ 
-.header__items {
-    padding: 30rem;
-    background-image: url(/app/image/bg-header-image.png);
-    height: 70rem;
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: whitesmoke;
-    text-align: center;
-    font-family: 'Grenze Gotisch', cursive;
-    font-size: 4rem;
-    font-weight: 500;
-}
-.header__title {
-    color: var(--text_color);
-    text-shadow: 0 -1px rgba(0,0,0,.1);
-    -webkit-animation: pulsate 1.5s linear infinite;
-    animation: pulsate 3.2s linear infinite;
-}
-
-@keyframes pulsate {
-    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
-   }
 
 
-/* ! Header End*/ 
-/* !main search Start*/
-.main__conteiner{
-    background-image: url(/app/image/Gothicwallz--Gothic-wallpaper-207.png);
-    height: 590rem;
-    background-repeat:round;
-  
-}
-.main_search{
-    margin: rem;
-    display: flex;
-    justify-content: center;
-}
-.search__form input{
-    margin: 10rem;
-    width: 70rem;
-    height: 7rem;
-    background-color: var(--search_color) ;
-    border-radius: 5rem;
-    border: none;
-    outline: none;
-    text-align: center;
-    font-family: 'Grenze Gotisch', cursive;
-    font-size: 3rem;
-    color: var(--text_color);
-}
 
-/* !main search End*/
-/* ! main -> cards Start */
-.main__cards{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8rem;
-    gap: 2rem;
-}
-.main__card{
-    width: 40rem;
-    height: 60rem;
-    
-}
-.main__card_content{
-    padding: 7rem;
-    width: 50rem;
-    height: 60rem;
-    background-image: url(/app/image/bg_cards.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-   
-}
-.main__card__name{
-    padding-top: 0.5rem;
-    font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
-    color: var(--text_color);
-}
-.main__card__photo img{
-    display: flex;
-    padding-top: 0.5rem;
-    width: 11rem;
-    height: 15rem;
-    opacity: 0.9;
 
-    
-}
-.main__card__secName , .main__card__birhday , .main__card__faculty{
-
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    color: var(--text_color);
-}
-.main__buttomInfo{
-    margin-top: 1rem;
-    border: none;
-    background-color: var(--search_color);
-    width: 15rem;
-    height: 4rem;
-    border-radius: 1rem;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    color: whitesmoke;
-    filter: blur(0.1rem);
-    transition: 0.5s;
-    
-}
-button{
-    cursor: url("../image/cursor.png"), auto;
-}
-.main__buttomInfo:hover{
-    filter: none;
-    transform: scale(1.15,1.25);
-}
-
-/* ! main -> cards End */
 
 /*! для облегчения работы скрытие элементов*/
 /* .nav{
