@@ -54,12 +54,13 @@ body{
 /* .nav{
     display: none;
 }
- .main{
-    display: none;
-}
-section{
-    display: none;
-}
+
 header{
     display: none;
 } */
+section{
+    display: none;
+}
+.main{
+    display: none;
+}
