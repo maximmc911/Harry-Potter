@@ -19,7 +19,7 @@
 }
 
 @keyframes pulsate {
-    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+    50% { color: #5a5353; text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 3px #ffd, 0 0 20px #fff; }
    }
 
 
