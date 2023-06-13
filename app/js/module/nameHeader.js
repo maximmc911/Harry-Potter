@@ -12,5 +12,5 @@ export function writeHeaderText() {
         }
         return index++;
     }
-    setInterval(Writetext , 1000)
+    setInterval(Writetext , 500)
 }

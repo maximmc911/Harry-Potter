@@ -1,0 +1,38 @@
+
+.main.active {
+    display: none;
+}
+
+ .Gryffindor{
+    display: none;
+}
+.Gryffindor.active {
+    display: inline;
+}
+
+.Slytherin{
+    display: none;
+}
+.Slytherin.active {
+    display: inline;
+}
+
+.Hufflepuff{
+    display: none;
+}
+.Hufflepuff.active {
+    display: inline;
+}
+.Ravenclaw{
+    display: none;
+}
+.Ravenclaw.active {
+    display: inline;
+}
+.Other{
+    display: none;
+}
+
+.Other.active {
+    display: inline;
+}

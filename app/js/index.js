@@ -8,8 +8,13 @@ writeHeaderText();
 import { MakeCard } from "./module/ReserveFile.js";
 MakeCard();
 
-
-// ! Проверки!!!!!!!
 // Timer
 import { PresentTimer } from "./module/timer.js";
 PresentTimer()
+console.log(PresentTimer);
+
+// ! Проверки!!!!!!!
+import { menuNav } from "./module/menuNav.js";
+menuNav();
+
+

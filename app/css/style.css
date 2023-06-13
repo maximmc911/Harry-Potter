@@ -19,6 +19,7 @@ font-family: 'Dancing Script', cursive;
 @import url('/app/css/module/moduleCards.css');
 @import url('/app/css/module/timer.css');
 @import url('/app/css/module/footer.css');
+@import url('/app/css/module/navmenu.css');
 
 
 *{
@@ -58,9 +59,4 @@ body{
 header{
     display: none;
 } */
-section{
-    display: none;
-}
-.main{
-    display: none;
-}
+ 
