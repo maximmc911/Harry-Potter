@@ -7,6 +7,20 @@ const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
  export const MakeCard = async () =>{
     try {
         let {data} = await axios(SERVER_URL);
+        console.log(data);
+        data.map((info) => {
+         
+        switch (info.gender) {
+            case `male`:
+                console.log(`${info.name} - men`);
+                break;
+            case `female`:
+                console.log(`${info.name} - women`);
+                break;
+        
+        };
+    });
+
         CreatCard(data , mainCard_parentDiv);
         
         
