@@ -15,7 +15,14 @@ PresentTimer()
 import { menuNav } from "./module/menuNav.js";
 menuNav();
 // ! Проверки!!!!!!!
-/* import { CreatModal } from "./modalWindow.js";
-CreatModal(CardBtn);
- */
+/* import { searchInputValue } from "./search.js"; */
+/* import { CreatCard } from "./module/makeCard.js"; */
+/* searchInputValue(data , CreatCard); */
 
+
+
+/* export function searchInputValue() {
+ 
+    });
+};
+searchInputValue(); */

@@ -21,52 +21,52 @@ export function menuNav() {
     navGryffindor.addEventListener('click', () => {
             sectionGryffindor.classList.toggle("active")
     
-            sectioninMain.classList.remove("active");
+    /*         sectioninMain.classList.remove("active");
             sectionSlytherin.classList.remove("active");
             sectionHufflepuff.classList.remove("active");
             sectionRavenclaw.classList.remove("active");
-            sectionOther.classList.remove("active");
+            sectionOther.classList.remove("active"); */
         } );
     
     navMain.addEventListener('click', () => {
             //! Для возможности закрытия основного меню. Необходимо расскомментировать
           /*   sectioninMain.classList.toggle("active") */ 
-    
-            sectionGryffindor.classList.remove("active");
+
+            /* sectionGryffindor.classList.remove("active");
             sectionSlytherin.classList.remove("active");
             sectionHufflepuff.classList.remove("active");
             sectionRavenclaw.classList.remove("active");
-            sectionOther.classList.remove("active");
+            sectionOther.classList.remove("active"); */
         } );
     
         navSlytherin.addEventListener('click', () => {
             sectionSlytherin.classList.toggle("active")
     
-            sectioninMain.classList.remove("active");
+      /*       sectioninMain.classList.remove("active");
             sectionGryffindor.classList.remove("active");
             sectionHufflepuff.classList.remove("active");
             sectionRavenclaw.classList.remove("active");
-            sectionOther.classList.remove("active");
+            sectionOther.classList.remove("active"); */
         } );
     
     navHufflepuff.addEventListener('click', () => {
         sectionHufflepuff.classList.toggle("active")
     
-            sectioninMain.classList.remove("active");
+           /*  sectioninMain.classList.remove("active");
             sectionSlytherin.classList.remove("active");
             sectionGryffindor.classList.remove("active");
             sectionRavenclaw.classList.remove("active");
-            sectionOther.classList.remove("active");
+            sectionOther.classList.remove("active"); */
         } );
     
      navRavenclaw.addEventListener('click', () => {
        sectionRavenclaw.classList.toggle("active")
     
-            sectioninMain.classList.remove("active");
+           /*  sectioninMain.classList.remove("active");
             sectionSlytherin.classList.remove("active");
             sectionHufflepuff.classList.remove("active");
             sectionGryffindor.classList.remove("active");
-            sectionOther.classList.remove("active");
+            sectionOther.classList.remove("active"); */
         } );
     
      navRavenOther.addEventListener('click', () => {
@@ -74,11 +74,11 @@ export function menuNav() {
         sectionOther.classList.toggle("active")
     
        
-            sectioninMain.classList.remove("active");
+           /*  sectioninMain.classList.remove("active");
             sectionSlytherin.classList.remove("active");
             sectionHufflepuff.classList.remove("active");
             sectionRavenclaw.classList.remove("active");
-            sectionGryffindor.classList.remove("active");
+            sectionGryffindor.classList.remove("active"); */
         } );
 }
 

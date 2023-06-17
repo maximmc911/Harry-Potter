@@ -18,10 +18,10 @@
             </div>
         
         </div>
-        <div class="main__card__name"><p>${info.name}</p></div>
-        <div class="main__card__secName"><p>${info.alternate_names}</p></div>
-        <div class="main__card__birhday"><p>${info.dateOfBirth}</p></div>
-        <div class="main__card__faculty"><p>Faculty:  ${info.house}</p></div>
+        <div class="main__card__name"><h4>${info.name}</h4></div>
+        <div class="main__card__secName"><h4>${info.alternate_names}</h4></div>
+        <div class="main__card__birhday"><h4>${info.dateOfBirth}</h4></div>
+        <div class="main__card__faculty"><h4>Faculty:  ${info.house}</h4></div>
             <button id="${info.id}" class="main__buttomInfo">
              More Info...
             </button>
@@ -32,9 +32,7 @@
     
     ).join(``);
     const CardBtn = document.querySelectorAll(".main__buttomInfo");
-    console.log(CardBtn);
     CreatModal (CardBtn , info);
-    console.log(info);
 };
 /*
 {image , name , alternate_names , house , id }

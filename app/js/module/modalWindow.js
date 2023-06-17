@@ -1,6 +1,6 @@
 
 const modal = document.querySelector(".modal__cards");
-const overlay = document.querySelector(".overlay");
+const overlay = document.querySelector(".owerlay");
 
 const showModal = () => {
   modal.classList.add("show");
@@ -12,8 +12,9 @@ const closeModal = () => {
   overlay.classList.remove("show");
 };
 
-// ! creating product modal
+
 export const CreatModal = (CardBtn = null, info = null) => {
+    // console.log(info);
   CardBtn.forEach((CardBtn) => {
 
     CardBtn.addEventListener("click", () => {
@@ -86,11 +87,12 @@ export const CreatModal = (CardBtn = null, info = null) => {
 
       showModal();
 
-      const closeModalBtn = document.querySelector(".close-modal");
+      const closeModalBtn = document.querySelector(".card__close");
 
       closeModalBtn.addEventListener("click", closeModal);
       overlay.addEventListener("click", closeModal);
     });
+    
   });
 };
 
