@@ -1,8 +1,8 @@
  export const CreatCard = (info , parentDiv )  =>{
 
  
-    parentDiv.innerHTML = info.map(
-        (info) => 
+    parentDiv.innerHTML = info.map((info) => 
+      
         
     `
 <div class="main__card">

@@ -8,20 +8,39 @@ const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
     try {
         let {data} = await axios(SERVER_URL);
         console.log(data);
-        data.map((info) => {
+        const arrPhoto = [];
+        const arrMenPhoto = [];
+        const arrGirlPhoto = [];
+         data.map((info) => {
          
-        switch (info.gender) {
-            case `male`:
-                console.log(`${info.name} - men`);
+        switch (info.image) {
+            case "":
+                switch (info.gender) {
+                    case `male`:
+                        info.image = "./image/anonMan.png" ;
+                        arrMenPhoto.push(info)
+                        break;
+                        
+                        default:
+                        info.image = "./image/anonGirl.png" ;
+                        arrGirlPhoto.push(info)
+                        break;
+                }
                 break;
-            case `female`:
-                console.log(`${info.name} - women`);
-                break;
+            default:
+                arrPhoto.push(info)
+            break;
+
         
         };
     });
+    const allArr = [
+        ... arrPhoto,
+        ... arrGirlPhoto ,
+        ... arrMenPhoto ,
+    ];
+    CreatCard(allArr , mainCard_parentDiv);
 
-        CreatCard(data , mainCard_parentDiv);
         
         
     } catch (err) {
