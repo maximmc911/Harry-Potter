@@ -68,5 +68,14 @@ button{
     filter: none;
     transform: scale(1.15,1.25);
 }
+.heroHouse img{
+    width: 15rem;
+    height: 10rem;
+}
+.main__card__photo{
+    display: flex;
+    align-items: center;
+    margin-left: -9rem;
+}
 
 /* ! main -> cards End */

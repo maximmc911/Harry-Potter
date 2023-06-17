@@ -1,16 +1,15 @@
 
 import { CreatCard } from "./makeCard.js";
 const mainCard_parentDiv = document.querySelector(".main__cards");
+const GryffindorCard_parentDiv = document.querySelector(".Gryffindor__cards");
 
 
 const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
  export const MakeCard = async () =>{
     try {
         let {data} = await axios(SERVER_URL);
-        console.log(data);
-        const arrPhoto = [];
-        const arrMenPhoto = [];
-        const arrGirlPhoto = [];
+       const GryffindorCards = [];
+        
          data.map((info) => {
          
         switch (info.image) {
@@ -18,28 +17,45 @@ const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
                 switch (info.gender) {
                     case `male`:
                         info.image = "./image/anonMan.png" ;
-                        arrMenPhoto.push(info)
+                        
                         break;
                         
                         default:
                         info.image = "./image/anonGirl.png" ;
-                        arrGirlPhoto.push(info)
+                       
                         break;
                 }
-                break;
-            default:
-                arrPhoto.push(info)
-            break;
-
-        
+                break;        
         };
+        switch (info.house) {
+            case "Gryffindor":
+                info.logoHouse = "./image/Gryffindor-Logo.png";
+
+                break;
+            case "Slytherin":
+                info.logoHouse = "./image/sliz-logo.png";
+
+                break;
+            case "":
+                info.logoHouse = "./image/Other-logo.png";
+
+                break;
+            case "Ravenclaw":
+                info.logoHouse = "./image/rave-logo.png";
+
+                break;
+            case "Hufflepuff":
+                info.logoHouse = "./image/huff-logo.png";
+
+                break;
+            
+        
+            default:
+                break;
+        }
     });
-    const allArr = [
-        ... arrPhoto,
-        ... arrGirlPhoto ,
-        ... arrMenPhoto ,
-    ];
-    CreatCard(allArr , mainCard_parentDiv);
+   
+    CreatCard(data , mainCard_parentDiv);
 
         
         

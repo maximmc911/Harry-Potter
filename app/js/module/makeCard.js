@@ -9,7 +9,13 @@
     <div class="main__card_content">
 
         <div class="main__card__photo">
+        <div class="heroHouse">
+             <img src="${info.logoHouse}" alt="">
+             </div>
+            <div class="heroPhoto">
             <img src="${info.image}" alt="">
+            </div>
+        
         </div>
         <div class="main__card__name"><p>${info.name}</p></div>
         <div class="main__card__secName"><p>${info.alternate_names}</p></div>
