@@ -66,4 +66,31 @@ h3{
 .modal__cards.show{
     transition: 5s;
     display: inline;
+    
 }
+@media(max-width:768px){
+.modal__cards{
+    left: -30rem;;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .card__house__logo img{
+        width: 10rem;
+        height: 7.5rem;
+        
+    }
+} 
+@media(max-width:640px){
+.modal__cards{
+    left: -34rem;;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .card__house__logo img{
+        width: 10rem;
+        height: 7.5rem;
+        
+    }
+} 

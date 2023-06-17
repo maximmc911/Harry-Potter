@@ -1,6 +1,9 @@
 const navMain = document.querySelector(".items__nav__main");
 const sectioninMain = document.querySelector(".main");
 
+const menu = document.querySelector(".list__items");
+const minimenu = document.querySelector(".nav");
+
 const navGryffindor = document.querySelector(".items__nav__Gryffindor");
 const sectionGryffindor = document.querySelector(".Gryffindor");
 
@@ -80,5 +83,7 @@ export function menuNav() {
             sectionRavenclaw.classList.remove("active");
             sectionGryffindor.classList.remove("active"); */
         } );
-}
-
+        minimenu.addEventListener('click', () => {
+            menu.classList.toggle("active")
+             } );
+};

@@ -1,7 +1,8 @@
 /* ! Header Start*/ 
 .header__items {
-    padding: 30rem;
+    padding-top: 30rem;
     background-image: url(/app/image/bg-header-image.png);
+  
     height: 70rem;
     background-repeat: no-repeat;
     background-size:cover;
@@ -20,7 +21,13 @@
 
 @keyframes pulsate {
     50% { color: #5a5353; text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 3px #ffd, 0 0 20px #fff; }
-   }
+ 
+}
 
 
 /* ! Header End*/ 
+@media (max-width:768px){
+    .header__items { 
+     font-size: 3rem;
+    }
+}

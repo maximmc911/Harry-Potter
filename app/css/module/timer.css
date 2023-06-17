@@ -38,6 +38,11 @@
     display: flex;
     justify-content: space-between;
 }
-.jjj{
-    padding-top: 50rem;
+
+@media (max-width:640px){
+    
+.time__cointeiner{
+    display: none;
+}
+
 }
