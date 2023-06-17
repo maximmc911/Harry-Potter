@@ -11,6 +11,7 @@
 .main__card{
     width: 40rem;
     height: 60rem;
+    transition: 1s;
     
 }
 .main__card_content{
@@ -29,7 +30,7 @@
 .main__card__name{
     padding-top: 0.5rem;
     font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--text_color);
 }
 .main__card__photo img{
@@ -77,5 +78,8 @@ button{
     align-items: center;
     margin-left: -9rem;
 }
-
+.main__card:hover{
+    transition: 1s;
+    transform: scale(1.1, 1.1);
+}
 /* ! main -> cards End */

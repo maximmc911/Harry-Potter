@@ -12,8 +12,10 @@ MakeCard();
 import { PresentTimer } from "./module/timer.js";
 PresentTimer()
 
-// ! Проверки!!!!!!!
 import { menuNav } from "./module/menuNav.js";
 menuNav();
-
+// ! Проверки!!!!!!!
+/* import { CreatModal } from "./modalWindow.js";
+CreatModal(CardBtn);
+ */
 

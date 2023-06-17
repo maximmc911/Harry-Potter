@@ -6,11 +6,16 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(187, 138, 138, 0.5);
+    background-color: rgba(34, 29, 29, 0.5);
     z-index: 2;
     display: none;
+    transition: 1s;
 }
-.cards{
+.card__house__logo img{
+    width: 20rem;
+    height: 15rem;
+}
+.modal__cards{
     position: fixed;
     margin-bottom: 11rem;
     left: 0;
@@ -24,6 +29,7 @@
     background-image: url(/app/image/moduleBG.png);
     border-radius: 5rem;
     display: none;
+    transition: 1s;
 }
 .card__items{
     padding-left: 2rem;
@@ -45,11 +51,19 @@
     display: flex;
     justify-content: center;
 }
-p{
+h3{
     font-size: 2.1rem;
     border: 0.01rem rgba(0, 0, 0, 0.401) solid;
     border-radius: 1rem 950%;
     font-family: 'Dancing Script', cursive;
     font-weight: 900;
 
+}
+.owerlay.show{
+    transition: 1s;
+    display: flex;
+}
+.modal__cards.show{
+    transition: 5s;
+    display: inline;
 }

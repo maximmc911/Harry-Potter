@@ -1,29 +1,82 @@
 https://www.rbc.ru/life/news/6478500b9a7947284d013d32
 https://hp-api.onrender.com/
 
-
-
-
-клик
-menuBtn.addEventListener(`click`, () => {
-    navContent.classList.toggle(`active`);
-    if (navContent.classList.contains(`active`)) {
-        menuBtn.innerHTML =`<i class="fa-solid fa-x"></i>`;
-    } else{
-        menuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-    }
-} )
-
-ПОисковик
-import { CreatCard } from "./makeCard.js";
- export const searchName = (data, parentDiv) => {
-    let search = document.querySelector(`.search_Name input`);
-    console.log(search);
- search.addEventListener(`input`, () =>{
- const text = search.value;
- console.log(text);
-  const searchCard = data.filter(item => 
-   item.name.toLowerCase().includes(text.toLowerCase()));
-   CreatCard(searchCard, parentDiv);
- });
- }; 
+0
+: 
+actor
+: 
+"Daniel Radcliffe"
+alive
+: 
+true
+alternate_actors
+: 
+[]
+alternate_names
+: 
+(2) ['The Boy Who Lived', 'The Chosen One']
+ancestry
+: 
+"half-blood"
+dateOfBirth
+: 
+"31-07-1980"
+eyeColour
+: 
+"green"
+gender
+: 
+"male"
+hairColour
+: 
+"black"
+hogwartsStaff
+: 
+false
+hogwartsStudent
+: 
+true
+house
+: 
+"Gryffindor"
+id
+: 
+"9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"
+image
+: 
+"https://ik.imagekit.io/hpapi/harry.jpg"
+logoHouse
+: 
+"./image/Gryffindor-Logo.png"
+name
+: 
+"Harry Potter"
+patronus
+: 
+"stag"
+species
+: 
+"human"
+wand
+: 
+core
+: 
+"phoenix feather"
+length
+: 
+11
+wood
+: 
+"holly"
+[[Prototype]]
+: 
+Object
+wizard
+: 
+true
+yearOfBirth
+: 
+1980
+[[Prototype]]
+: 
+Object

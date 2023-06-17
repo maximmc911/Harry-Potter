@@ -1,3 +1,4 @@
+ import { CreatModal } from "./modalWindow.js";
  export const CreatCard = (info , parentDiv )  =>{
 
  
@@ -21,7 +22,7 @@
         <div class="main__card__secName"><p>${info.alternate_names}</p></div>
         <div class="main__card__birhday"><p>${info.dateOfBirth}</p></div>
         <div class="main__card__faculty"><p>Faculty:  ${info.house}</p></div>
-            <button id="${info.infoid}" class="main__buttomInfo">
+            <button id="${info.id}" class="main__buttomInfo">
              More Info...
             </button>
            
@@ -30,6 +31,10 @@
     `
     
     ).join(``);
+    const CardBtn = document.querySelectorAll(".main__buttomInfo");
+    console.log(CardBtn);
+    CreatModal (CardBtn , info);
+    console.log(info);
 };
 /*
 {image , name , alternate_names , house , id }

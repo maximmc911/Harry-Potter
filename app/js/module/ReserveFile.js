@@ -1,5 +1,6 @@
 
 import { CreatCard } from "./makeCard.js";
+
 const mainCard_parentDiv = document.querySelector(".main__cards");
 const GryffindorCard_parentDiv = document.querySelector(".Gryffindor__cards");
 const SlytherinСards_parentDiv = document.querySelector(".Slytherin__cards");
@@ -12,6 +13,7 @@ const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
  export const MakeCard = async () =>{
     try {
         let {data} = await axios(SERVER_URL);
+        console.log(data);
        const GryffindorCards = [];
        const SlytherinСards = [];
        const HufflepuffCards = [];
@@ -68,7 +70,7 @@ const  SERVER_URL = `https://hp-api.onrender.com/api/characters`;
                 break;
         }
     });
-   
+  
     CreatCard(data , mainCard_parentDiv);
     CreatCard(GryffindorCards , GryffindorCard_parentDiv);
     CreatCard(SlytherinСards , SlytherinСards_parentDiv);

@@ -11,8 +11,9 @@ a{
     max-width: 160rem;
     width: 100%;
     position:fixed;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: 1;
+    transition: 1s;
 }
 .nav__content{
     background: rgb(34, 33, 33);
@@ -40,5 +41,9 @@ a{
 
     display: flex;
     justify-content: space-around;
+}
+.nav__conteiner:hover{
+    transition: 1s;
+    opacity: 1;
 }
 /* ! Navbar End*/ 
