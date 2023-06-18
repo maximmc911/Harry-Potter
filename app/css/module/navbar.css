@@ -48,7 +48,7 @@ a{
 }
 /* ! Navbar End*/ 
 
-@media (max-width:640px){
+@media (max-width:860px){
 .list__items{
     display: none;
 }

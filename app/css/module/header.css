@@ -1,7 +1,11 @@
 /* ! Header Start*/ 
+.header__conteiner{
+    max-width: 174rem;
+    width: 100%;
+}
 .header__items {
     padding-top: 30rem;
-    background-image: url(/app/image/bg-header-image.png);
+    background-image: url("../../image/bg-header-image.png");
   
     height: 70rem;
     background-repeat: no-repeat;

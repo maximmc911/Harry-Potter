@@ -44,6 +44,8 @@ html{
 }
 
 body{
+    max-width: 180rem;
+    width: 100%;
     font-size: 1.6rem; /*вернет значение к 16px для браузеров */
     background-color: var(--bg_color) ;
 }

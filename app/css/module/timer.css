@@ -6,7 +6,7 @@
 .timer{
     width: 80rem;
     height: 30rem;
-    background-image: url(/app/image/timerBg.png);
+    background-image: url("../../image/timerBg.png");
     border-radius: 3rem;
 }
 .time__items{
@@ -22,7 +22,7 @@
     text-align: center;
     font-size: 7rem;
     border: none;
-    background-image: url("/app/image/timerBgCheck.png");
+    background-image: url("../../image/timerBgCheck.png");
     width: 10rem;
     border-radius: 3rem;
 }
@@ -39,7 +39,7 @@
     justify-content: space-between;
 }
 
-@media (max-width:640px){
+@media (max-width:700px){
     
 .time__cointeiner{
     display: none;
